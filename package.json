@@ -1,0 +1,28 @@
+{
+  "name": "mireflex",
+  "version": "0.1.0",
+  "description": "A simple and minimalist landing page for myreflex page",
+  "main": "index.js",
+  "scripts": {
+    "dev:inspect": "NODE_OPTIONS='--inspect' next",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "landing",
+    "landingpage"
+  ],
+  "author": "Eduardo Zepeda",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.4",
+    "tailwindcss": "^2.0.1"
+  }
+}
