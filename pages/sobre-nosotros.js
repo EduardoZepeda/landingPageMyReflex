@@ -13,7 +13,7 @@ const AboutUs = () => {
         </Head>
         <div className="mt-32 w-3/4 lg:w-2/4">
             <h1 className="text-4xl">Sobre nosotros</h1>
-            <p className="leading-loose mt-8"></p>
+            <p className="leading-loose mt-8">Pendiente</p>
         </div>
     </div>)
 }
