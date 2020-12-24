@@ -4,8 +4,8 @@ const Logo = () => {
 
 
     return (
-        <div className="text-gray-200">
-            <p>Reflex</p>
+        <div className="mx-16 my-6 text-gray-200">
+            <p>Mi Reflex</p>
         </div>
         )
 }

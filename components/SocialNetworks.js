@@ -4,8 +4,8 @@ const SocialNetworks = () => {
 
 
     return (
-        <div>
-            <h2 className="text-xl text-gray-100 mb-4">Síguenos en redes sociales</h2>
+        <div className="mx-16 my-6 text-gray-100">
+            <h2 className="text-xl mb-4">Síguenos en redes sociales</h2>
             <div className="flex flex-row justify-center">
                 <div className="mx-1">
                     <a href="https://facebook.com"><img width="30px" height="30px" src="/logos/facebook_logo.svg" alt="Facebook"/></a>
