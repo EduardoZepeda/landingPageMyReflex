@@ -1,5 +1,6 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
 import MD5 from "crypto-js/md5";
+import validateEmail from "../../utils/validateEmail"
 
 const listId = process.env.LIST_ID
 
@@ -20,10 +21,16 @@ async function registerUserInMailchimp({email}) {
 }
 
 export default function registerUser(req, res) {
+  const { email } = req.body
+  if(!validateEmail(email)){
+    return res.status(403).json({error: "Por favor envia un correo electrónico válido."})
+  }
   const response = registerUserInMailchimp(req.body)
-  res.statusCode = response.hasOwnProperty('id') ? 201 : 403
-  res.setHeader('Content-Type', 'application/json')
-  res.end(JSON.stringify({ email_address: response.hasOwnProperty('id')? response.email_address : ""}))
+  if(response.hasOwnProperty('id')){
+    return res.status(201).json({email})
+  }else{
+    return res.status(403).json({error:"No pudimos registrar tu correo, por favor intenta más tarde"})
+  }
 }
 
 
