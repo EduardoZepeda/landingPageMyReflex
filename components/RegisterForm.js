@@ -4,11 +4,17 @@ import registerEmail from '../utils/registerEmail'
 
 const RegisterForm = () => {
     const [email, setEmail] = useState('')
-    const [name, setName] = useState('')
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
 
     const router = useRouter()
+
+    const formDataToJson = (target) => {
+        const formData = new FormData(target)
+        let formValues = {}
+        formData.forEach((value, key) => formValues[key] = value)
+        return formValues
+    }
 
     const handleInput = (event) => {
         setEmail(event.target.value)
@@ -16,18 +22,17 @@ const RegisterForm = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        const formData = new FormData(event.target)
-        let formValues = {}
-        formData.forEach((value, key) => formValues[key] = value)
+        const formValues = formDataToJson(event.target)
         setLoading(true)
         const response = await registerEmail(formValues)
+        const { error='' } = await response.json()
         if(response.status===201){
             setLoading(false)
-            setError('')
+            setError(error)
             router.push('/confirma-tu-correo/')
         } else {
             setLoading(false)
-            setError("Hubo un error al registrarte, por favor intenta de nuevo")
+            setError(error)
         }
     }
 
