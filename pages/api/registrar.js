@@ -1,12 +1,14 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
 import MD5 from "crypto-js/md5";
-import validateEmail from "../../utils/validateEmail"
 
-const listId = process.env.LIST_ID
+import validateEmail from "../../utils/validateEmail"
+import { LIST_ID, MAILCHIMP_API_KEY, MAILCHIMP_PREFIX_SERVER } from "../../settings/settings"
+
+const listId = LIST_ID
 
 mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_PREFIX_SERVER,
+  apiKey: MAILCHIMP_API_KEY,
+  server: MAILCHIMP_PREFIX_SERVER,
 })
 
 async function registerUserInMailchimp({email}) {
