@@ -4,7 +4,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{ height: '100%'}}>
+      <Html lang={"es"} style={{ height: '100%'}}>
         <Head />
         <style>{`
             #__next { height: 100% }
