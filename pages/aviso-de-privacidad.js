@@ -1,6 +1,4 @@
 import React from 'react'
-
-import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 const PrivacyPolicy = () => {
@@ -10,7 +8,8 @@ const PrivacyPolicy = () => {
         <Head>
             <title>Aviso de privacidad -Mi reflex</title>
             <meta property="og:title" content="Mi reflex" key="Mi reflex" />
-            <meta property="og:description" content="Mi reflex" key="Mi reflex" />
+            <meta property="og:description" content="Replace this" key="Replace this" />
+            <meta name="Description" content="Replace this" />
         </Head>
         <div className="mt-32 w-3/4 lg:w-2/4">
             <h1 className="text-4xl">Nuestro aviso de privacidad</h1>
