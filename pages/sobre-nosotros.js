@@ -9,7 +9,8 @@ const AboutUs = () => {
         <Head>
             <title>Sobre nosotros - Mi reflex</title>
             <meta property="og:title" content="Mi reflex" key="Mi reflex" />
-            <meta property="og:description" content="Mi reflex" key="Mi reflex" />
+            <meta property="og:description" content="Replace this" key="Replace this" />
+            <meta name="Description" content="Replace this" />
         </Head>
         <div className="mt-32 w-3/4 lg:w-2/4">
             <h1 className="text-4xl">Sobre nosotros</h1>
