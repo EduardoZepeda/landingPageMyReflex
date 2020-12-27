@@ -7,9 +7,6 @@ module.exports = {
     extend: {
       colors: {
         'accent-1': '#FFF',
-        'lavanda': '#5c6ac4',
-        'bone': '#e0e0e0',
-        'teal': '#008080',
       },
       gridTemplateRows: {
         'burguer': 'auto 1fr auto;'
