@@ -2,9 +2,8 @@ import '../styles.css'
 import Layout from '../components/Layout'
 import FacebookPixel from '../components/FacebookPixel'
 import Head from 'next/head'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 
-function App ({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
