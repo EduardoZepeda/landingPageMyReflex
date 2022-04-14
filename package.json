@@ -12,7 +12,7 @@
     "export": "next export",
     "fix": "standard --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d out"
   },
   "keywords": [
     "landing",
