@@ -7,20 +7,20 @@ import SocialProof from '../components/SocialProof'
 import LastCallToAction from '../components/LastCallToAction'
 
 const Home = () => {
-    return (
+  return (
     <>
-    <Head>
+      <Head>
         <title>Mi reflex</title>
-        <meta property="og:title" content="Mi reflex" key="Mi reflex" />
-        <meta property="og:description" content="Replace this" key="Replace this" />
-        <meta name="Description" content="Replace this" />
-    </Head>
-    <Hero/>
-    <Proposal/>
-    <SocialProof/>
-    <LastCallToAction/>
+        <meta property='og:title' content='Mi reflex' key='Mi reflex' />
+        <meta property='og:description' content='Replace this' key='Replace this' />
+        <meta name='Description' content='Replace this' />
+      </Head>
+      <Hero />
+      <Proposal />
+      <SocialProof />
+      <LastCallToAction />
     </>
-    )
+  )
 }
 
 export default Home

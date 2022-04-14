@@ -1,18 +1,15 @@
 module.exports = {
   future: {
-    removeDeprecatedGapUtilities: true,
+    removeDeprecatedGapUtilities: true
   },
   purge: ['./components/*.{js,ts,jsx,tsx}', './pages/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
-        'accent-1': '#FFF',
-      },
-      gridTemplateRows: {
-        'burguer': 'auto 1fr auto;'
+      zIndex: {
+        '-10': '-10'
       }
-    },
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }

@@ -1,13 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <div className="h-full grid grid-rows-burguer">
-        <Navbar/>
-        {children}
-        <Footer/>
+    <div className='min-h-screen text-gray-800'>
+      <main className='min-h-screen'>{children}</main>
+      <Footer />
     </div>
   )
 }

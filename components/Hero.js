@@ -2,24 +2,19 @@ import React from 'react'
 import RegisterForm from './RegisterForm'
 
 const Hero = () => {
-
-
-    return (
-        <div className="flex flex-column flex-wrap items-center justify-left py-32 bg-cover bg-center"
-         style={{backgroundImage: `url(${"background_hero.jpg"})`}}>
-            <div className="lg:w-3/5 md:w-full">
-                <div className="text-gray-100 px-20">
-                    <h1 className="text-6xl md:text-6xl mt-16 mb-4">Mi reflex</h1>
-                    <h2 className="text-4xl md:text-6xl mt-16 mb-4">Te ayudamos a elegir tu equipo fotográfico al mejor precio</h2>
-                    <p className="text-xl my-2 leading-normal">Diariamente revisamos Amazon, Aliexpress, Liverpool, Sanborns y otras tiendas en linea para mostrarte los mejores precios. Además te avisamos por correo electrónico de ofertas imperdibles.</p>
-                    <RegisterForm></RegisterForm>  
-                </div>
-            </div>
-        </div>
-        )
+  return (
+    <div className='flex flex-column flex-wrap px-20 text-white py-16 items-center justify-left relative'>
+      <div className='max-w-prose'>
+        <h1 className='text-4xl mt-16 mb-4'>Mi reflex</h1>
+        <h2 className='text-4xl mt-16 mb-4'>Tu equipo fotográfico al mejor precio</h2>
+        <p className='text-xl my-2 text-gray-400 leading-normal'>Revisamos todas las tiendas en linea para mostrarte los mejores precios y ofertas.</p>
+        <RegisterForm />
+      </div>
+      <picture>
+        <img src='background_hero.jpg' className='w-full h-full object-cover -z-10  absolute top-0 bottom-0 right-0 left-0 opacity-90' />
+      </picture>
+    </div>
+  )
 }
 
-export default Hero                   
-
-
-
+export default Hero
